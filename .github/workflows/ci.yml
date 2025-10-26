@@ -1,13 +1,11 @@
-name: CI - Calculator Tests
+name: CI - Calculator build and tests
 
 on:
   push:
-    branches:
-      - develop
-      - 'feature/**'
+    branches: ["develop", "feature"]
 
 jobs:
-  test:
+  build_test:
     runs-on: ubuntu-latest
 
     steps:
